@@ -2,7 +2,9 @@ pipeline {
     agent any
 
     parameters{
+        string(name: "SPEC", defaultValue: "cypress/integration/1-getting-started/todo.spec.js", description: "Por defecto se ejecutará el todo.spec.js del getting-started")
         choice(name: "SCRIPT", choices: ['cy:run','cy:acciones','cy:compras'], description: "Elija el script a ejecutar")
+        choice(name: "BROWSER", choices: ['chrome'], description: "Navegador a usar")
     }
     stages {
         stage('Building app') {
@@ -12,7 +14,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Hello World'
+                sh 'npm i'
+                sh 'npx cypress run --browser ${BROWSER} --spec ${SPEC}'
             }
         }
         stage('Reports') {
