@@ -1,14 +1,13 @@
 pipeline {
     agent any
 
+    parameters{
+        choice(name: "SCRIPT", choices: ['cy:run','cy:acciones','cy:compras'], description: "Elija el script a ejecutar")
+    }
     stages {
-        stage('Git') {
+        stage('Building app') {
             steps {
-                sh 'echo "Acá se hace un checkout del repo"'
-                sh '''
-                    echo "Y acá mostraría todos los archivos"
-                    ls -l
-                '''
+                echo 'Acá se buildea la app'
             }
         }
         stage('Test') {
