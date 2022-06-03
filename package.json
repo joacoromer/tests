@@ -1,0 +1,19 @@
+{
+  "name": "pruebas-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "npx cypress run",
+    "cy:open": "npx cypress open",
+    "cy:headed": "npm run cy:run -- --headed",
+    "cy:chrome": "npm run cy:run -- --browser chrome",
+    "cy:mozilla": "npm run cy:run -- --browser firefox",
+    "cy:record": "npm run cy:run -- --browser firefox --record --key 5a00bb72-c533-467b-9cd1-8189ffd3868f"
+},
+  "author": "romero",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  }
+}
