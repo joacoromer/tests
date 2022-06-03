@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '/usr/bin/npm install'
-                sh 'npx cypress run --browser ${BROWSER} --spec ${SPEC}'
+                sh 'npx cypress run --spec ${SPEC}'
             }
         }
         stage('Reports') {
