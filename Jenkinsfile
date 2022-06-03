@@ -6,6 +6,11 @@ pipeline {
         choice(name: "SCRIPT", choices: ['cy:run','cy:acciones','cy:compras'], description: "Elija el script a ejecutar")
         choice(name: "BROWSER", choices: ['chrome'], description: "Navegador a usar")
     }
+
+    options{
+        ansiColor('xterm')
+    }
+
     stages {
         stage('Building app') {
             steps {
