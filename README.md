@@ -106,19 +106,6 @@ npm install --save-dev cypress-cucumber-preprocessor
 npm i salty-cypress-testrail-reporter
 ```
 
-### Configuración del reporter options
-
-"reporterOptions": {
-"domain": "invertironline.testrail.com",
-"username": "qa@invertironline.com",
-"password": "QKsaJAE3PxB9t7zr8YXm-y/FwZ5CogpS72R.b1J/w",
-"projectId": 0,
-"suiteId": 0,
-"createTestRun": "boolean",
-"runId": 0,
-"runName": "Test Run Name"
-}
-
 Usamos la extensión Prettier.
 En el directorio hay un archivo .prettierrc con estos parámetros:
 
