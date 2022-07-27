@@ -1,0 +1,9 @@
+{
+    "chromeWebSecurity": false,
+    "env": {
+        "NombreVariable": "Valor de la misma"
+    },
+    "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 60000,
+    "pageLoadTimeout": 120000
+}
