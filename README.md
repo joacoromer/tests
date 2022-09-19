@@ -1,13 +1,10 @@
 Proyecto CORE
 Requerimientos para implementación de Cypress
 
-Tener instalada la versión de node js homologada por la compañía.
+Tener instalada última versión de node js.
 Visual Code es el IDE sugerido para el framework.
-Tener instalado GIT.
+GIT.
 Disponer de un repositorio en github: URL REPO
-Tener acceso a Jenkins para la CD/CI.
-Tener definido los 2 flujos principales de automatización para el spike o POC.
-Permiso de red para bajar dependencias (si se requiere).
 
 Proyecto GIT
 INGRESAR URL
@@ -119,7 +116,7 @@ En el directorio hay un archivo .prettierrc con estos parámetros:
 Api key de cypress:
 QKsaJAE3PxB9t7zr8YXm-y/FwZ5CogpS72R.b1J/w
 
-Para integrar base de datos usaremos más adelante esta librería:
+Integracion de base de datos:
 https://www.npmjs.com/package/cypress-sql-server
 
 ## Definir parametrización en Jenkins
